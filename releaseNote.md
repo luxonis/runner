@@ -1,7 +1,7 @@
 ## Features
 
 ## Misc
-  - Added PR security options (#928)
+  - By default PR jobs are now disabled
 
 ## Windows x64
 We recommend configuring the runner in a root folder of the Windows drive (e.g. "C:\actions-runner"). This will help avoid issues related to service identity folder permissions and long file path restrictions on Windows.
