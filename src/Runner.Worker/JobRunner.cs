@@ -226,8 +226,8 @@ namespace GitHub.Runner.Worker
             var prSecuritySettings = settings.PullRequestSecuritySettings;
 
             if (prSecuritySettings is null) {
-                Trace.Info("No pullRequestSecurity defined in settings, allowing this build");
-                return true;
+                Trace.Info("No pullRequestSecurity defined in settings, disallowing this build");
+                return false;
             }
 
             var githubEvent = gitHubContext["event"] as DictionaryContextData;
