@@ -410,6 +410,8 @@ namespace GitHub.Runner.Common.Tests.Listener
             }
         }
 
+
+        /* Self update disable, no need to test
         [Fact]
         [Trait("Level", "L0")]
         [Trait("Category", "Runner")]
@@ -494,5 +496,7 @@ namespace GitHub.Runner.Common.Tests.Listener
                 _messageListener.Verify(x => x.DeleteMessageAsync(It.IsAny<TaskAgentMessage>()), Times.Once());
             }
         }
+        */
+
     }
 }
